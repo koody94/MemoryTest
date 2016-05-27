@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CA4EE6761CF7CE57002A4AA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE6751CF7CE57002A4AA5 /* main.m */; };
+		CA4EE67E1CF7CE95002A4AA5 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE67D1CF7CE95002A4AA5 /* Shape.m */; };
+		CA4EE6811CF7D009002A4AA5 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE6801CF7D009002A4AA5 /* Rectangle.m */; };
+		CA4EE6841CF7D4ED002A4AA5 /* ShapeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4EE6831CF7D4ED002A4AA5 /* ShapeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		CA4EE6721CF7CE57002A4AA5 /* MemoryTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MemoryTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4EE6751CF7CE57002A4AA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA4EE67C1CF7CE95002A4AA5 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		CA4EE67D1CF7CE95002A4AA5 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+		CA4EE67F1CF7D009002A4AA5 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		CA4EE6801CF7D009002A4AA5 /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		CA4EE6821CF7D4ED002A4AA5 /* ShapeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeManager.h; sourceTree = "<group>"; };
+		CA4EE6831CF7D4ED002A4AA5 /* ShapeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				CA4EE6751CF7CE57002A4AA5 /* main.m */,
+				CA4EE6821CF7D4ED002A4AA5 /* ShapeManager.h */,
+				CA4EE6831CF7D4ED002A4AA5 /* ShapeManager.m */,
+				CA4EE67F1CF7D009002A4AA5 /* Rectangle.h */,
+				CA4EE6801CF7D009002A4AA5 /* Rectangle.m */,
+				CA4EE67C1CF7CE95002A4AA5 /* Shape.h */,
+				CA4EE67D1CF7CE95002A4AA5 /* Shape.m */,
 			);
 			path = MemoryTest;
 			sourceTree = "<group>";
@@ -119,6 +134,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4EE6761CF7CE57002A4AA5 /* main.m in Sources */,
+				CA4EE6841CF7D4ED002A4AA5 /* ShapeManager.m in Sources */,
+				CA4EE67E1CF7CE95002A4AA5 /* Shape.m in Sources */,
+				CA4EE6811CF7D009002A4AA5 /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +227,7 @@
 		CA4EE67A1CF7CE57002A4AA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +235,7 @@
 		CA4EE67B1CF7CE57002A4AA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
