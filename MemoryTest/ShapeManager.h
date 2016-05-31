@@ -11,9 +11,11 @@
 
 @interface ShapeManager : NSObject
 {
-    Rectangle *rectangle;
+//    Rectangle *rectangle;
 }
 
-- (void) setRectangle:(Rectangle*)rect;
+//- (void) setRectangle:(Rectangle*)rect;
+
+@property (nonatomic, retain) Rectangle *rectangle;
 - (void) drawShape;
 @end

@@ -22,19 +22,21 @@
 
 - (void) dealloc
 {
-    if(rectangle)
-        [rectangle release];
+    if(_rectangle)
+        [_rectangle release];
     
     [super dealloc];
 }
 
-- (void) setRectangle:(Rectangle*)rect
-{
-    rectangle = [rect retain];
-}
+//- (void) setRectangle:(Rectangle*)rect
+//{
+//    if(rectangle)
+//        [rectangle release];
+//    rectangle = [rect retain];
+//}
 
 - (void) drawShape
 {
-    [rectangle draw];
+    [_rectangle draw];
 }
 @end
